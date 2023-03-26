@@ -1,0 +1,18 @@
+.touch {
+    background-color: #000;
+    padding: 110px 0;
+    &__container {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        margin-bottom: 15px;
+    }
+    &__btn {
+        width: 154px;
+        margin: 0 auto;
+    }
+}

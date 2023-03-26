@@ -1,0 +1,18 @@
+.nepal {
+    min-height: 600px;
+    background: url("../img/bg_nepal.jpg") no-repeat center/cover;
+    position: relative;
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #C0C0C0;
+    }
+    &__title {
+        text-align: left;
+        margin-left: auto;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}

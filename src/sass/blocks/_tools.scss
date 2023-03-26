@@ -1,0 +1,42 @@
+.tools {
+    background-color: #000;
+    position: relative;
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    &__descr {
+        width: 50%;
+        padding-right: 10px;
+    }
+    &__title {
+        color: #FFFFFF;
+        text-align: left;
+        margin-top: 6px;
+    }
+    &__subtitle {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #C0C0C0;
+        text-align: left;
+    }
+    &__text {
+        display: block;
+        max-width: 514px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin: 14px 0 20px 0;
+    }
+    &__img {
+        background: url("../img/tools.jpg") no-repeat center/cover;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+    }
+    &__btn {
+        width: 152px;   
+    }
+}

@@ -1,0 +1,32 @@
+.clients {
+    min-height: 500px;
+    background-color: #000;
+    padding: 110px 0 ;
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .owl-carousel {
+        margin-top: 80px;
+        .owl-stage {
+            display: flex;
+            align-items: center; 
+        }
+        .owl-item {
+            text-align: center; 
+        }
+        
+    }
+    .clients__item {
+        max-width: 128px;
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+    }
+    
+}

@@ -1,0 +1,22 @@
+.title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    &_fz23 {
+        font-size: 23px;
+        line-height: 30px;
+        color: #C0C0C0;
+    }
+    &_fz14 {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+       
+    }
+    &_fz28 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}

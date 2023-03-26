@@ -1,0 +1,44 @@
+.location {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    li {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        &:before {
+            content: "";
+            display: inline-block;
+            background-image: url("../img/icon_1.svg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+        }
+        &:nth-child(2){
+            &:before {
+                background-image: url("../img/icon_2.svg");
+            }
+        }
+        &:nth-child(3){
+            &:before {
+                background-image: url("../img/icon_3.svg");
+                width: 32px;
+            }
+        }
+        &:nth-child(4){
+            &:before {
+                background-image: url("../img/icon_4.svg");
+                width: 10px;
+            }
+        }
+    }
+}

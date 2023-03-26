@@ -1,0 +1,466 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .projects {
+        &__item {
+            max-width: 470px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &__link {
+            margin-right: 20px;
+            font-size: 13px;
+            &-small {
+                font-size: 11px;
+            }
+            &-btn {
+                padding: 7px 16px 10px 16px;
+            }
+        }
+    }
+    .projects {
+        &__item {
+            max-width: 350px;
+            &-title {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .btn {
+        width: 120px;
+        font-size: 12px;
+        height: 30px;
+        &:before {
+            width: 25px;
+            height: 25px;
+            left: 5px;
+        }
+    }
+    .clients {
+        &__title {
+            font-size: 35px;
+            line-height: 35px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    .touch {
+        &__title {
+            font-size: 35px;
+            line-height: 35px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__btn {
+            width: 154px;
+            height: 42px;
+            font-size: 15px;
+            &:before {
+                width: 32px;
+                height: 32px;
+                left: 10px;
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            &-text {
+                font-size: 10px;
+                margin-top: 5px;
+            }
+        }
+        &__list {
+            margin-right: 30px;
+        }
+        &__social {
+            
+            &-text {
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        height: 50px;
+        padding: 8px 0 0 0;
+        &__burger {
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            span {
+                position: absolute;
+                width: 30px;
+                height: 2px;
+                background-color: #fff;
+                left: 5px;
+                top: 18px;
+                transition: all 0.3s ease-out;
+                &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #fff;
+                    top: -10px;       
+                    transition: all 0.3s ease-out;
+                }
+                &:after {
+                    top: 10px;
+                }
+            }
+        }
+        &__menu {
+            position: fixed;
+            right: 0;
+            top: -100%;
+            background-color:$main-color;
+            width: 400px;
+            height: 100%;
+            transition: all 0.3s ease-out;
+            overflow: auto;
+        }
+        &__list {
+            display: block;
+        }
+        &__item {
+            padding: 10px 0;
+
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
+        &__link {
+            margin-right: 0;
+            font-size: 20px;
+            &-btn {
+                border: none;
+            }
+        }
+       
+    }
+    .header.active {
+        .header__menu {
+            padding: 100px 20px 20px 20px;
+            top: 0;
+        }
+        .header__burger {
+            span {
+                width: 0;
+                &:before {
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                &:after {
+                    transform: rotate(-45deg);
+                    top: 0;
+                }
+            }
+        }
+    }
+    .banner {
+        height: calc(100vh);
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__subtitle {
+            font-size: 12px;
+        }
+        &__text {
+            font-size: 12px;
+            margin-top: 14px;
+            line-height: 16px;
+        }
+    }
+    .location {
+        li {
+            font-size: 10px;
+            &:before {
+                width: 10px;
+                height: 10px;
+            }
+            &:nth-child(3){
+                &:before {
+                    width: 24px;
+                    height: 12px;
+                }
+            }
+            &:nth-child(4){
+                &:before {
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .projects {
+        padding: 50px 0;
+        &__wrapper {
+            justify-content: center;
+            margin-top: 25px;
+        }
+        &__item {
+            max-width: 450px;
+            &-title {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 17px;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+    .tools {
+        &__title {
+            font-size: 24px;
+            line-height: 18px;
+        }
+        &__subtitle {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .clients {
+        min-height: 400px;
+        padding: 50px 0 ;
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .touch {
+        padding: 60px 0;
+        &__container {
+            width: 450px;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__btn {
+            width: 154px;
+            height: 42px;
+            font-size: 15px;
+            &:before {
+                width: 32px;
+                height: 32px;
+                left: 10px;
+            }
+        }
+    }
+    .footer {
+        &__wrapper {
+            display: block;
+        }
+        &__logo {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__img {
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header {
+        &__menu {
+            width: 100%;
+        }
+        &__list {
+            text-align: center;
+        }
+    }
+    .banner {
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 11px;
+        }
+        &__text {
+            max-width: 380px;
+            font-size: 11px;
+            margin-top: 10px;
+            line-height: 14px;
+        }
+    }
+    .location {
+        li {
+            font-size: 10px;
+            &:before {
+                width: 10px;
+                height: 10px;
+            }
+            &:nth-child(3){
+                &:before {
+                    width: 24px;
+                    height: 12px;
+                }
+            }
+            &:nth-child(4){
+                &:before {
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .projects {
+
+        &__title {
+            font-size: 25px;
+            line-height: 25px;
+        }
+        &__subtitle {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__item {
+            max-width: 450px;
+            &-title {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    .sub_container {
+        top: 180px;
+        width: 250px;
+    }
+    .japan {
+        min-height: 400px;
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .tools {
+        min-height: 450px;
+        padding-top: 40px;
+        display: block;
+        &__descr {
+            width: 100%;
+        }
+        &__img {
+            position: relative;
+            width: 100%;
+            min-height: 300px;
+            margin-top: 40px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 18px;
+        }
+        &__subtitle {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .costa-rica {
+        min-height: 400px;
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .nepal {
+        min-height: 400px;
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .touch {
+        &__container {
+            width: 100%;
+        }
+    }
+    .footer {
+        padding: 50px 0;
+        
+        &__logo {
+            &-text {
+               font-size: 9px;
+            }
+        }
+        &__item {
+            margin-top: 5px;
+        }
+        &__list {
+            margin-right: 20px;
+        }
+        &__link {
+            font-size: 12px;
+        }
+        &__line {
+            margin: 20px 0 25px 0;
+        }
+        &__social {
+            flex-direction: column;
+            &-text {
+                order: 2;
+                margin: 10px auto 0;
+
+            }
+            &-items {
+                order: 1;
+                justify-content: center;
+            }
+            &-link {
+                width: 20px;
+                margin: 0 5px;
+            }
+        }
+    }
+}

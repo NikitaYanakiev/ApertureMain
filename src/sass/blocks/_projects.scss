@@ -1,0 +1,41 @@
+.projects {
+    background-color: #000;
+    padding: 100px 0;
+    &__wrapper {
+        max-width: 1168px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 42px;
+    }
+    &__item {
+        max-width: 576px;
+        position: relative;
+        margin-bottom: 16px;
+        img {
+            width: 100%;
+            display: block;
+        }
+        &-title {
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align-last: left;
+            margin-bottom: 15px;
+        }
+    }
+    &__descr {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        padding-right: 30px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #C0C0C0;
+        margin-bottom: 15px;
+    }
+
+}
